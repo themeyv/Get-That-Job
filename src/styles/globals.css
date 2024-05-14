@@ -2,32 +2,242 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1#heading1 {
+  font-size: 6.4167rem;
+  line-height: 7.8333rem;
+  font-weight: 300;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1#subtitle1 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2#heading2 {
+  font-size: 3.8333rem;
+  line-height: 4.625rem;
+  font-weight: 300;
+}
+
+h2#subtitle2 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+
+h3#heading3 {
+  font-size: 3rem;
+  line-height: 3.6875rem;
+  font-weight: 400;
+}
+
+h4#heading4 {
+  font-size: 2.125rem;
+  line-height: 2.5625rem;
+  font-weight: 400;
+}
+
+h5#heading5 {
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  font-weight: 400;
+}
+
+h6#heading6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+#body1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+p#body1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+#body2 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+p#body2 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+#caption {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+p#caption {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+#overline {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+
+p#overline {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+
+#p-text {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+
+button#btn {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+button.button_pink {
+  background-color: lightblue;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: white;
+  width: 116px;
+  position: relative;
+  text-align: left;
+}
+
+button.button_pink:active {
+  opacity: 80%;
+}
+
+button.button_pink_previous {
+  background-color: #f48fb1;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: white;
+  width: 143px;
+  position: relative;
+  text-align: right;
+}
+
+input#upload {
+  display: none;
+}
+
+input#upload+label {
+  background-color: #f48fb1;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  width: 138px;
+  text-align: right;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button.button_white {
+  border: 1px solid;
+  border-color: #f48fb1;
+  padding: 7px 16px 7px 16px;
+  border-radius: 16px;
+  color: #616161;
+  width: 118px;
+  position: relative;
+  text-align: left;
+  font-weight: 500;
+}
+
+button.button_pink_new {
+  background-color: #f48fb1;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: white;
+  position: relative;
+  text-align: left;
+}
+
+button.button_bg_white {
+  background-color: white;
+  border: #f48fb1 solid;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+}
+
+button.button_bg_yellow {
+  background-color: rgb(247, 255, 137);
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+}
+
+button.button_pink_tertiary {
+  background-color: #bf5f82;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+button.button_gray {
+  background-color: #e1e2e1;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: #8e8e8e;
+}
+
+button.button_previous {
+  width: 131px;
+}
+
+button.button_white {
+  border: 1px solid;
+  border-color: #f48fb1;
+  padding: 7px 16px 7px 16px;
+  border-radius: 16px;
+  color: #616161;
+  width: 118px;
+  position: relative;
+  text-align: left;
+  font-weight: 500;
+}
+
+button.button_pink_file {
+  background-color: #f48fb1;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  color: white;
+  width: 160px;
+  position: relative;
+  text-align: right;
+}
+
+button.button_white {
+  background-color: white;
+  border: #f48fb1 solid 1px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: black;
+  width: auto;
+  position: relative;
+  text-align: center;
 }
