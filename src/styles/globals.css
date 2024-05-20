@@ -185,6 +185,24 @@ button.button_bg_white {
   border-radius: 16px;
 }
 
+button.button_signin{
+  width: 129px;
+height: 40px;
+padding: 8px 16px 8px 16px;
+gap: 8px;
+border-radius: 16px 16px 16px 16px;
+border: 1px solid #F48FB1;
+}
+
+button.button_login{
+  width: 112px;
+height: 40px;
+padding: 8px 16px 8px 16px;
+gap: 8px;
+border-radius: 16px 16px 16px 16px;
+border: 1px solid #F48FB1;
+}
+
 button.button_bg_yellow {
   background-color: rgb(247, 255, 137);
   padding: 8px 16px 8px 16px;
@@ -226,7 +244,7 @@ button.button_pink_file {
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   color: white;
-  width: 160px;
+  width: auto;
   position: relative;
   text-align: right;
 }
@@ -241,3 +259,4 @@ button.button_white {
   position: relative;
   text-align: center;
 }
+
